@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesquisa de Fundamentação</title>
+<link rel="stylesheet" href="fundament.css">    
+</head>
+<body>
+
+    <div class="container">
+        <h2>Fundamentação</h2>
+        <div id="inputContainer">
+            <input type="text" id="inputTitulo" placeholder="Digite o título" oninput="pesquisarTitulo()">
+            <div id="btn">
+                <button id="botaoCopiar" onclick="copiarTexto()">Copiar Texto</button>
+                <button id="botaoLimpar" onclick="limparTextarea()">Limpar Texto</button>
+                
+            </div>
+        <ul id="resultados"></ul>
+       
+    </div>
+    <textarea id="campoTexto" contenteditable="true"></textarea>
+</body>
+<script src="fundament.js"></script>
+
+</html>

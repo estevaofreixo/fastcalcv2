@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;        
+    display: flex;    
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    margin-top: 70px;
+}
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+#inputTitulo {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;    
+    width: 300px;      
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+button {
+    padding: 8px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 125px;
+    border-radius: 10%;
+    border: solid 1px rgb(119, 151, 191);
+    background-color: #65b0ff;
+}       
+
+button:active {
+    background-color: #7bb9fc; /* Altere para a cor desejada */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0x;
+    margin: 0;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+#campoTexto {
+    width: 70%; /* Define a largura do campo de texto */
+    height: 100%; /* Define a altura do campo de texto */
+    margin: 5px auto; /* Centraliza o campo de texto */
+    font-size: 20px; /* Define o tamanho da fonte */
+    text-align: justify; /* Justifica o texto */
+}
+
+#campoTexto p {
+    margin-bottom: 10px; /* Adiciona espaço entre os textos */
+}

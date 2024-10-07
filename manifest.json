@@ -1,0 +1,85 @@
+{
+  "manifest_version": 2,
+  "name": "Fastcalc",
+  "version": "1.0",
+  "description": "Produz algumas automações a procedimentos realizados nos sistemas Pje, Pjecalc e outros a eles associados",
+  "author": "Estêvão Freixo",
+  
+  "icons": {
+    "48": "icons/fogo.png"
+  },
+    
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"        
+      ],
+      "js": [               
+        "script.js",
+        "script2.js",
+        "script3.js",
+        "script4.js",
+        "script5.js",
+        "script6.js",
+        "script7.js",
+        "script8.js",        
+        "script9.js",
+        "script10.js",
+        "script11.js",
+        "script12.js",
+        "script13.js",
+        "script14.js",
+        "script15.js",
+        "script16.js",
+        "script17.js",
+        "script18.js",
+        "script19.js",
+        "script20.js",
+        "script21.js",       
+        "script21b.js",
+        "script22.js",
+        "script23.js",        
+        "script24.js",
+        "script25.js",
+        "script26.js",
+        "script27.js",
+        "script28.js",
+        "script29.js",
+        "script30.js",
+        "script31.js",
+        "script32.js",
+        "script33.js",
+        "script34.js",
+        "script35.js",
+        "script36.js",
+        "script36b.js",
+        "script37.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  
+    "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "storage",
+    "menus",
+    "activeTab",
+    "contextMenus",
+    "notifications",
+    "clipboardWrite",
+    "private-browsing"    
+  ],
+  
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  
+  "browser_action": {
+    "default_popup": "config.html",
+    "browser_style": true    
+  }
+  
+}
+
+

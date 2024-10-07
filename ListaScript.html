@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Scripts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .script-list {
+            margin-top: 20px;
+        }
+        .script-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .script-item label {
+            flex: 0 0 100px; /* largura fixa para o nome do script */
+            margin: 0;
+        }
+        .script-item .description {
+            flex: 1;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Adiciona uma borda ao redor da descrição */
+            border-radius: 4px; /* Arredonda os cantos da borda */
+            background-color: #f9f9f9; /* Define uma cor de fundo leve */
+        }
+        .hidden {
+            display: none; /* Oculta os itens que não correspondem */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Scripts</h1>
+    
+    <!-- Campo de pesquisa -->
+    <div>
+        <input type="text" id="searchInput" placeholder="Pesquisar descrições...">
+    </div>
+    
+    <div class="script-list">
+        <!-- Lista de scripts -->
+        <div class="script-item">
+            <label for="script1">Script 1:</label>
+            <span class="description" id="script1">Botão "Rescisórias" no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script2">Script 2:</label>
+            <span class="description" id="script2">Ajeita a formatação de tabelas coladas na página "Anexar documentos"</span>
+        </div>
+        <div class="script-item">
+            <label for="script3">Script 3:</label>
+            <span class="description" id="script3">Coloca data atual no liquidar no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script4">Script 4:</label>
+            <span class="description" id="script4">Configura parâmetros de atualização no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script5">Script 5:</label>
+            <span class="description" id="script5">Insere os dados dos honorários no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script6">Script 6:</label>
+            <span class="description" id="script6">Cria botão para lembrete "CALC PRONTO"</span>
+        </div>
+        <div class="script-item">
+            <label for="script7">Script 7:</label>
+            <span class="description" id="script7">Imprime planilha de cálculos no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script8">Script 8:</label>
+            <span class="description" id="script8">Função para inserir prazo de 15 dias em Homologar decisão e clicar em Salvar</span>
+        </div>
+        <div class="script-item">
+            <label for="script9">Script 9:</label>
+            <span class="description" id="script9">Clica no botão para abrir o Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script10">Script 10:</label>
+            <span class="description" id="script10">Conclui assinatura na certidão "Certidão REEF"</span>
+        </div>
+        <div class="script-item">
+            <label for="script11">Script 11:</label>
+            <span class="description" id="script11">Remove chips e atividade contadoria + EE - 1</span>
+        </div>
+        <div class="script-item">
+            <label for="script12">Script 12:</label>
+            <span class="description" id="script12">Remove chips e atividade contadoria + EE - 2 (botão)</span>
+        </div>
+        <div class="script-item">
+            <label for="script13">Script 13:</label>
+            <span class="description" id="script13">Ajeita formatação na página "Anexar documentos"</span>
+        </div>
+        <div class="script-item">
+            <label for="script14">Script 14:</label>
+            <span class="description" id="script14">Automatiza o clique nos botões do "Enviar para o PJe"</span>
+        </div>
+        <div class="script-item">
+            <label for="script15">Script 15:</label>
+            <span class="description" id="script15">Preenche as informações de login no site BB</span>
+        </div>
+        <div class="script-item">
+            <label for="script16">Script 16:</label>
+            <span class="description" id="script16">Insere Estado e Município no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script17">Script 17:</label>
+            <span class="description" id="script17">Registra a data da distribuição da ação na página "detalhe" do processo</span>
+        </div>
+        <div class="script-item">
+            <label for="script18">Script 18:</label>
+            <span class="description" id="script18">Automatiza as configurações da verba SALDO DE SALÁRIO no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script19">Script 19:</label>
+            <span class="description" id="script19">Automatiza as configurações da verba 13º SALÁRIO no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script20">Script 20:</label>
+            <span class="description" id="script20">Configura custas no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script21">Script 21:</label>
+            <span class="description" id="script21">Captura, no Pjecalc, a data limite do cálculo</span>
+        </div>
+        <div class="script-item">
+            <label for="script21b">Script 21b:</label>
+            <span class="description" id="script21b">Insere a data limite na verba INDENIZAÇÃO POR DANO MORAL</span>
+        </div>
+        <div class="script-item">
+            <label for="script22">Script 22:</label>
+            <span class="description" id="script22">Clica em "LIQUIDAR" e "IMPRIMIR" na planilha de cálculo externo do Pjecalc e Clica em </span>
+        </div>
+        <div class="script-item">
+            <label for="script23">Script 23:</label>
+            <span class="description" id="script23">Caputra o nome da empresa em localStorage</span>
+        </div>
+        <div class="script-item">
+            <label for="script24">Script 24:</label>
+            <span class="description" id="script24">Preenche o email lista REEF</span>
+        </div>
+        <div class="script-item">
+            <label for="script25">Script 25:</label>
+            <span class="description" id="script25">Assina o cálculo importado para o Pje</span>
+        </div>
+        <div class="script-item">
+            <label for="script26">Script 26:</label>
+            <span class="description" id="script26">Automatiza multa do 467 no Pjecalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script27">Script 27:</label>
+            <span class="description" id="script27">Automatiza a marcação dos checkboxes para base de calc do FGTS</span>
+        </div>
+        <div class="script-item">
+            <label for="script28">Script 28:</label>
+            <span class="description" id="script28">Configura Multa do 477 no PjeCalc</span>
+        </div>
+        <div class="script-item">
+            <label for="script29">Script 29:</label>
+            <span class="description" id="script29">Gera clique na página de login do Pje</span>
+        </div>        
+        <div class="script-item">
+            <label for="script30">Script 30:</label>
+            <span class="description" id="script30">Marca último check box na verba 13º salário - PjeCalc</span>
+        </div>        
+        <div class="script-item">
+            <label for="script31">Script 31:</label>
+            <span class="description" id="script31">Configura honorários rda - PjeCalc</span>
+        </div>  
+        <div class="script-item">
+            <label for="script31">Script 32:</label>
+            <span class="description" id="script31">Automatiza horas extras 50% no PjeCalc</span>
+        </div>  
+        <div class="script-item">
+            <label for="script31">Script 33:</label>
+            <span class="description" id="script31">Automatiza horas extras 100% no PjeCalc</span>
+        </div>  
+        <div class="script-item">
+            <label for="script31">Script 34:</label>
+            <span class="description" id="script31">Automatiza intrajornada no PjeCalc</span>
+        </div>  
+        <div class="script-item">
+            <label for="script31">Script 35:</label>
+            <span class="description" id="script31">Configura lançamento Embargos à Execução</span>
+        </div>        
+        <div class="script-item">
+            <label for="script31">Script 36:</label>
+            <span class="description" id="script31">Automação Banex 1</span>
+        </div>        
+        <div class="script-item">
+            <label for="script31">Script 36b:</label>
+            <span class="description" id="script31">Automação Banex 2</span>
+        </div>        
+        <div class="script-item">
+            <label for="script31">Script 37:</label>
+            <span class="description" id="script31">Faz download do pdf do processo na página de detalhes</span>
+        </div>        
+    </div>
+
+    <script>
+        function searchDescriptions() {
+            const searchValue = document.getElementById('searchInput').value.toLowerCase();
+            const scriptItems = document.querySelectorAll('.script-item');
+
+            // Ocultar todas as divs primeiro
+            scriptItems.forEach(item => {
+                item.classList.add('hidden');
+            });
+
+            // Mostrar as divs que correspondem
+            let found = false; // Flag para verificar se algum item foi encontrado
+            scriptItems.forEach(item => {
+                const description = item.querySelector('.description');
+                if (description.textContent.toLowerCase().includes(searchValue)) {
+                    item.classList.remove('hidden');
+                    if (!found) {
+                        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    }
+                }
+            });
+
+            // Se nenhum item for encontrado, rolar para o topo da página
+            if (!found) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Adiciona um listener para o evento 'input' no campo de pesquisa
+        document.getElementById('searchInput').addEventListener('input', searchDescriptions);
+    </script>
+</body>
+</html>
